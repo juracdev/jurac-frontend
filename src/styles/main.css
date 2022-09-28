@@ -1,0 +1,62 @@
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.opacity-hidden {
+  opacity: 0;
+}
+
+.dflex {
+  display: flex
+}
+
+.f-just-end {
+  justify-content: end;
+}
+
+.f-just-center {
+  justify-content: center;
+}
+
+.f-items-center {
+  align-items: center;
+}
+
+.f-sh-0 {
+  flex-shrink: 0
+}
+
+.cnt {
+  width: 1250px;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+  .cnt {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 1279px) {
+  .cnt {
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}

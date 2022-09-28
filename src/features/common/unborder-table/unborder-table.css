@@ -1,0 +1,31 @@
+.unborder-table {
+  border-collapse: collapse;
+}
+
+.unborder-table thead {
+  text-align: left;
+}
+
+.unborder-table th {
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.unborder-table tr {
+  font-size: 16px;
+  border-color: transparent;
+}
+
+.unborder-table tbody tr:hover {
+  background-color: rgba(6, 69, 173, 0.1);
+}
+
+.unborder-table td,
+.unborder-table th {
+  padding: 6px;
+}
+
+img[src="/uploads/news/1-sent/calendar.png"] {
+  width: 220px;
+  height: 213px;
+}

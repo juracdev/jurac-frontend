@@ -1,0 +1,48 @@
+.chartsRoot {
+  display: flex;
+  flex-direction: column;
+}
+
+.votes {
+  margin-bottom: 15px;
+}
+
+.votes__header {
+  text-align: center;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.votes__canvas-wrapper {
+ width: 400px;
+ margin: 0 auto;
+}
+
+.votes__canvas {
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .votes {
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .votes__header {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .chartsRoot {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .votes {
+    margin-bottom: 0;
+  }
+}
+

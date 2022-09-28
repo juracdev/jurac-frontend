@@ -1,0 +1,75 @@
+.droptext {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.droptext__wrapper {
+  position: relative;
+  padding-left: 20px;
+}
+
+.droptext__wrapper:hover .droptext__title {
+  cursor: pointer;
+  color: #00bfff;
+}
+
+.droptext__wrapper:hover .droptext__arrow {
+  border-left-color: #00bfff;
+}
+
+.droptext__arrow {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid #0645ad;
+  transform: translateY(-50%);
+  transition: transform 0.3s;
+}
+
+.droptext__arrow--open {
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.droptext__title {
+  height: auto;
+  padding: 0;
+  border: none;
+  color: #0645ad;
+  font-size: 16px;
+  text-align: left;
+  text-transform: none;
+  background-color: transparent;
+}
+
+.droptext__title:hover {
+  background-color: transparent;
+}
+
+.droptext__collapse {
+  transition: opacity 0.3s;
+}
+
+.droptext__text {
+  padding: 10px;
+}
+
+.droptext__text--bordered {
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: 5px;
+}
+
+
+.droptext--small .droptext__wrapper {
+  padding-left: 0;
+}
+
+.droptext--small .droptext__title {
+  font-size: 13px;
+  font-family: 'Open Sans';
+}
