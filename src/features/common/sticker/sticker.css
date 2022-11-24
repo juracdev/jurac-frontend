@@ -1,0 +1,27 @@
+.sticker {
+  position: absolute;
+  z-index: 95;
+  top: 2px;
+  right: 0;
+  padding: 20px;
+  border: 1px solid #00bfff;
+  background-color: #f5f5f5;
+  font-size: 14px;
+  text-align: center;
+}
+
+.sticker__link {
+  cursor: pointer;
+}
+
+.sticker__link:hover {
+  color: #00bfff;
+  text-decoration: underline;
+}
+
+@media (min-width: 640px) {
+  .sticker {
+    padding: 30px;
+    font-size: 16px;
+  }
+}

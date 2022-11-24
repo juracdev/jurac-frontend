@@ -21,7 +21,7 @@ p {
 }
 
 .dflex {
-  display: flex
+  display: flex;
 }
 
 .f-just-end {
@@ -37,26 +37,15 @@ p {
 }
 
 .f-sh-0 {
-  flex-shrink: 0
+  flex-shrink: 0;
 }
 
-.cnt {
-  width: 1250px;
-  margin: 0 auto;
+.sm-hidden {
+  display: none;
 }
 
-@media (max-width: 767px) {
-  .cnt {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
-@media (max-width: 1279px) {
-  .cnt {
-    width: 100%;
-    box-sizing: border-box;
-    padding-left: 50px;
-    padding-right: 50px;
+@media (min-width: 640px) {
+  .sm-hidden {
+    display: block;
   }
 }
