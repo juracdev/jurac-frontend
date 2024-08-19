@@ -20,8 +20,18 @@ p {
   opacity: 0;
 }
 
+.news-gradient {
+  background: linear-gradient(180deg, #f5c99a 0%, #cec29b 50%, #6ac2cb 100%);
+}
+
+/* flex-styles */
+
 .dflex {
   display: flex;
+}
+
+.f-column {
+  flex-direction: column;
 }
 
 .f-just-end {
@@ -30,6 +40,14 @@ p {
 
 .f-just-center {
   justify-content: center;
+}
+
+.f-just-between {
+  justify-content: space-between;
+}
+
+.f-just-around {
+  justify-content: space-around;
 }
 
 .f-items-center {

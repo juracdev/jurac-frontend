@@ -5,9 +5,11 @@ import runVotes from './features/votes';
 
 import './styles/main.css';
 import './features/common/unborder-table/unborder-table.css';
+import './features/common/line-table/line-table.css';
 import './features/common/sticker/sticker.css';
 import './features/common/tabs/tabs.css';
 import './features/questions/questions.css';
+import './features/main-header/main-header.css';
 
 import './assets/icons/at.svg';
 import './assets/icons/phone.svg';

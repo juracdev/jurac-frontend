@@ -1,0 +1,26 @@
+.main-logo {
+  display: block;
+  float: left;
+  font-family: at_onepage;
+  font-size: 24px;
+  height: 100px;
+  letter-spacing: 1px;
+  line-height: 50px;
+  overflow: hidden;
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+
+.main-logo__image {
+  display: none;
+}
+
+.main-logo__text {
+  margin-right: 20px;
+}
+
+@media (min-width: 370px) {
+  .main-logo__image {
+    display: inline;
+  }
+}
