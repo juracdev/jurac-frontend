@@ -1,0 +1,43 @@
+.image-hoverdesc {
+  position: relative;
+  display: inline-block;
+}
+
+.image-hoverdesc__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.image-hoverdesc__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.image-hoverdesc:hover .image-hoverdesc__overlay {
+  opacity: 1;
+}
+
+.image-hoverdesc__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.image-hoverdesc__description {
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}

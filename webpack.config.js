@@ -118,6 +118,11 @@ module.exports = function (_env, argv) {
         filename: 'photo-cards.html',
         template: 'src/photo-cards.html',
       }),
+      new HtmlWebpackPlugin({
+        title: 'ImageEffects',
+        filename: 'image-effects.html',
+        template: 'src/image-effects.html',
+      }),
       new MiniCssExtractPlugin({
         filename: 'bundle.[contenthash].css',
       }),
