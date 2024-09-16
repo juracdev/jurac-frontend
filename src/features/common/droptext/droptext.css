@@ -6,16 +6,7 @@
 
 .droptext__wrapper {
   position: relative;
-  padding-left: 20px;
-}
-
-.droptext__wrapper:hover .droptext__title {
-  cursor: pointer;
-  color: #00bfff;
-}
-
-.droptext__wrapper:hover .droptext__arrow {
-  border-left-color: #00bfff;
+  padding-left: 25px;
 }
 
 .droptext__arrow {
@@ -27,9 +18,17 @@
   height: 0;
   border-top: 7px solid transparent;
   border-bottom: 7px solid transparent;
-  border-left: 7px solid #0645ad;
+  border-left: 7px solid #000000;
   transform: translateY(-50%);
   transition: transform 0.3s;
+}
+
+.droptext--blue .droptext__arrow {
+  border-left: 7px solid #0645ad;
+}
+
+.droptext--blue .droptext__wrapper:hover .droptext__arrow {
+  border-left-color: #00bfff;
 }
 
 .droptext__arrow--open {
@@ -40,11 +39,27 @@
   height: auto;
   padding: 0;
   border: none;
-  color: #0645ad;
+  color: #000000;
   font-size: 16px;
   text-align: left;
   text-transform: none;
   background-color: transparent;
+}
+
+.droptext__wrapper:hover .droptext__title {
+  cursor: pointer;
+}
+
+.droptext--blue .droptext__title {
+  color: #0645ad;
+}
+
+.droptext--blue .droptext__wrapper:hover .droptext__title {
+  color: #00bfff;
+}
+
+.droptext--black .droptext__wrapper:hover .droptext__title {
+  text-decoration: underline;
 }
 
 .droptext__title:hover {
@@ -60,10 +75,9 @@
 }
 
 .droptext__text--bordered {
-  border: 1px solid rgba(0, 0, 0, .125);
+  border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 5px;
 }
-
 
 .droptext--small .droptext__wrapper {
   padding-left: 0;

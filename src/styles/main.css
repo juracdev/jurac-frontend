@@ -62,6 +62,12 @@ p {
   display: none;
 }
 
+/*  Fix schedule tables colors */
+table td.fr-blue,
+table th.fr-blue {
+  border: 1px double #2196f3 !important;
+}
+
 @media (min-width: 640px) {
   .sm-hidden {
     display: block;
