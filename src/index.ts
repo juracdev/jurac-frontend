@@ -2,6 +2,7 @@ import runDroptext from './features/common/droptext';
 import runModal from './features/common/modal';
 
 import runVotes from './features/votes';
+import runFilterTables from './features/filter-tables';
 
 import './styles/main.css';
 import './features/common/unborder-table/unborder-table.css';
@@ -31,4 +32,10 @@ const chartsRoot = document.getElementById('chartsRoot');
 
 if (chartsRoot) {
   runVotes(chartsRoot);
+}
+
+const filterTables = document.getElementById('filter-tables');
+
+if (filterTables) {
+  runFilterTables(filterTables);
 }

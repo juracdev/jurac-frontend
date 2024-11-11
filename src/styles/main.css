@@ -30,6 +30,10 @@ p {
   display: flex;
 }
 
+.dflex-wrap {
+  flex-wrap: wrap;
+}
+
 .f-column {
   flex-direction: column;
 }
@@ -62,6 +66,10 @@ p {
   display: none;
 }
 
+.xl2-hidden {
+  display: none;
+}
+
 /*  Fix schedule tables colors */
 table td.fr-blue,
 table th.fr-blue {
@@ -70,6 +78,12 @@ table th.fr-blue {
 
 @media (min-width: 640px) {
   .sm-hidden {
+    display: block;
+  }
+}
+
+@media (min-width: 1536px) {
+  .xl2-hidden {
     display: block;
   }
 }
