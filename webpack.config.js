@@ -123,6 +123,11 @@ module.exports = function (_env, argv) {
         filename: 'image-effects.html',
         template: 'src/image-effects.html',
       }),
+      new HtmlWebpackPlugin({
+        title: 'DpoCourses',
+        filename: 'dpo-courses.html',
+        template: 'src/dpo-courses.html',
+      }),
       new MiniCssExtractPlugin({
         filename: 'bundle.[contenthash].css',
       }),
