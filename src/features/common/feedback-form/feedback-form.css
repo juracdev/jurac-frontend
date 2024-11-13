@@ -1,0 +1,19 @@
+.feedback-form
+{
+    font-size: 16px;
+}
+
+.feedback-form__fieldset
+{
+    display: flex;
+    align-items: center;
+    border: none;
+}
+
+.feedback-form__fieldset + .feedback-form__fieldset {
+    margin-top: 12px;
+}
+
+.feedback-form__input {
+    margin-right: 10px;  
+}

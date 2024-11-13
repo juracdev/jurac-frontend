@@ -128,6 +128,11 @@ module.exports = function (_env, argv) {
         filename: 'dpo-courses.html',
         template: 'src/dpo-courses.html',
       }),
+      new HtmlWebpackPlugin({
+        title: 'FeedbackForm',
+        filename: 'feedback-form.html',
+        template: 'src/feedback-form.html',
+      }),
       new MiniCssExtractPlugin({
         filename: 'bundle.[contenthash].css',
       }),
