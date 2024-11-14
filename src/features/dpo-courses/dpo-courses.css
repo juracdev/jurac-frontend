@@ -54,6 +54,8 @@
   border: none;
   cursor: pointer;
   text-align: center;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .banner-card__button--blue {
@@ -63,7 +65,6 @@
 
 .banner-card__button:hover {
   color: #fcab55;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 @media (min-width: 1024px) {
