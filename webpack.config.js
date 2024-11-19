@@ -133,6 +133,11 @@ module.exports = function (_env, argv) {
         filename: 'feedback-form.html',
         template: 'src/feedback-form.html',
       }),
+      new HtmlWebpackPlugin({
+        title: 'SideMenu',
+        filename: 'side-menu.html',
+        template: 'src/side-menu.html',
+      }),
       new MiniCssExtractPlugin({
         filename: 'bundle.[contenthash].css',
       }),

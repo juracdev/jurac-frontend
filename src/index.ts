@@ -3,6 +3,7 @@ import runModal from './features/common/modal';
 
 import runVotes from './features/votes';
 import runFilterTables from './features/filter-tables';
+import runSideMenu from './features/common/side-menu';
 
 import './styles/main.css';
 import './features/common/unborder-table/unborder-table.css';
@@ -11,6 +12,7 @@ import './features/common/sticker/sticker.css';
 import './features/common/tabs/tabs.css';
 import './features/common/icon-link/icon-link.css';
 import './features/common/feedback-form/feedback-form.css';
+import './features/common/side-menu/side-menu.css';
 import './features/questions/questions.css';
 import './features/main-header/main-header.css';
 import './features/image-effects/image-effects.css';
@@ -43,4 +45,10 @@ const filterTables = document.getElementById('filter-tables');
 
 if (filterTables) {
   runFilterTables(filterTables);
+}
+
+const sideMenu = document.querySelector('.side-menu');
+
+if (sideMenu) {
+  runSideMenu(sideMenu);
 }
