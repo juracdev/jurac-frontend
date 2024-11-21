@@ -6,6 +6,7 @@
 
 .side-menu__aside {
   width: 100%;
+  flex-shrink: 0;
 }
 
 .side-menu__list {
@@ -59,12 +60,16 @@
 }
 
 @media (min-width: 767px) {
+  .side-menu {
+    flex-direction: row;
+  }
+
   .side-menu__aside {
     width: 300px;
   }
 
-  .side-menu {
-    flex-direction: row;
+  .side-menu__list {
+    border-bottom: none;
   }
 
   .side-menu__list {

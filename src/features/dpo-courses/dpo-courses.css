@@ -21,9 +21,14 @@
   color: #ffffff;
 }
 
+.banner-card--wide {
+  flex-direction: row;
+  width: 100%;
+}
+
 .banner-card__wave {
   position: absolute;
-  top: 0;
+  top: -10px;
   right: -20px;
 }
 
@@ -36,7 +41,7 @@
 
 .banner-card__title {
   align-self: center;
-  margin: 30px 0 24px;
+  margin: 38px 0 24px;
   font-size: 18px;
   text-align: center;
   text-transform: uppercase;
@@ -45,6 +50,10 @@
 .banner-card__buttons-wrapper {
   display: flex;
   justify-content: space-around;
+}
+
+.banner-card--wide .banner-card__buttons-wrapper {
+  align-self: center;
 }
 
 .banner-card__button {
@@ -65,6 +74,12 @@
 
 .banner-card__button:hover {
   color: #fcab55;
+}
+
+@media (min-width: 767px) {
+  .banner-card--wide {
+    width: 500px;
+  }
 }
 
 @media (min-width: 1024px) {
