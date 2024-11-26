@@ -1,0 +1,33 @@
+.main-banner__wrapper {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.main-banner__link {
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  background-color: #00bfff;
+  border-radius: 0 0 8px 8px;
+}
+
+.main-banner__link:hover {
+  color: #ffaa00;
+}
+
+@media (min-width: 767px) {
+  .main-banner__link {
+    padding: 30px;
+  }
+}

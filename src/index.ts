@@ -17,6 +17,7 @@ import './features/questions/questions.css';
 import './features/main-header/main-header.css';
 import './features/image-effects/image-effects.css';
 import './features/dpo-courses/dpo-courses.css';
+import './features/main-banner/main-banner.css';
 
 import './assets/icons/at.svg';
 import './assets/icons/phone.svg';
