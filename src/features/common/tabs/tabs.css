@@ -14,7 +14,14 @@
 
 #tab-btn-1:checked ~ .tab-content-1,
 #tab-btn-2:checked ~ .tab-content-2,
-#tab-btn-3:checked ~ .tab-content-3 {
+#tab-btn-3:checked ~ .tab-content-3,
+#tab-btn-4:checked ~ .tab-content-4,
+#tab-btn-5:checked ~ .tab-content-5,
+#tab-btn-6:checked ~ .tab-content-6,
+#tab-btn-7:checked ~ .tab-content-7,
+#tab-btn-8:checked ~ .tab-content-8,
+#tab-btn-9:checked ~ .tab-content-9,
+#tab-btn-10:checked ~ .tab-content-10 {
   display: block;
 }
 
