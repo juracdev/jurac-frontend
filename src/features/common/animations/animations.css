@@ -1,0 +1,39 @@
+.animations-pulse {
+  -webkit-animation: pulse 4s infinite;
+  animation: pulse 4s infinite;
+  transition: transform 0.3s ease;
+}
+@-webkit-keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  62.5% {
+    transform: scale(1.1);
+  }
+  75% {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  62.5% {
+    transform: scale(1.1);
+  }
+  75% {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1);
+  }
+}

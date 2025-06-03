@@ -70,6 +70,14 @@ p {
   display: none;
 }
 
+.flex-margin-container {
+  flex-wrap: wrap;
+}
+
+.flex-margin + .flex-margin {
+  margin-top: 12px;
+}
+
 /*  Fix schedule tables colors */
 table td.fr-blue,
 table th.fr-blue {
@@ -79,6 +87,15 @@ table th.fr-blue {
 @media (min-width: 640px) {
   .sm-hidden {
     display: block;
+  }
+
+  .flex-margin-container {
+    flex-wrap: nowrap;
+  }
+
+  .flex-margin + .flex-margin {
+    margin-top: 0;
+    margin-left: 12px;
   }
 }
 

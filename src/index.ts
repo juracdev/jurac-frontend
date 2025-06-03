@@ -6,6 +6,7 @@ import runFilterTables from './features/filter-tables';
 import runSideMenu from './features/common/side-menu';
 
 import './styles/main.css';
+import './features/common/animations/animations.css';
 import './features/common/unborder-table/unborder-table.css';
 import './features/common/line-table/line-table.css';
 import './features/common/sticker/sticker.css';
@@ -18,6 +19,7 @@ import './features/main-header/main-header.css';
 import './features/image-effects/image-effects.css';
 import './features/dpo-courses/dpo-courses.css';
 import './features/main-banner/main-banner.css';
+import './features/adaptive-slider/adaptive-slider.css'
 
 import './assets/icons/at.svg';
 import './assets/icons/phone.svg';

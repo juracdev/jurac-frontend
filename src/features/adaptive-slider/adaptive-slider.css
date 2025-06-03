@@ -1,0 +1,10 @@
+.adaptive-slide {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 1024px) {
+  .adaptive-slide {
+    background-size: contain;
+  }
+}
