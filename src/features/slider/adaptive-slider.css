@@ -1,6 +1,7 @@
 .adaptive-slide {
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media (min-width: 1024px) {

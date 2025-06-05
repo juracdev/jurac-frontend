@@ -1,24 +1,24 @@
 const runSideMenu = (rootEl: Element) => {
-  const links = rootEl.querySelectorAll('.side-menu__item-link');
-  const contents = rootEl.querySelectorAll('.side-menu__content');
+  const links = rootEl.querySelectorAll(".side-menu__item-link");
+  const contents = rootEl.querySelectorAll(".side-menu__content");
 
   links.forEach((link, linkIdx) => {
-    link.addEventListener('click', () => {
+    link.addEventListener("click", () => {
       links.forEach((link) => {
-        link.classList.remove('side-menu__item-link--active');
+        link.classList.remove("side-menu__item-link--active");
       });
 
       contents.forEach((content) => {
-        content.classList.remove('side-menu__content--active');
+        content.classList.remove("side-menu__content--active");
       });
 
-      const selectedConten = contents[linkIdx];
+      const selectedContent = contents[linkIdx];
 
-      console.log('selectedConten', selectedConten);
+      console.log("selectedConten", selectedContent);
 
-      if (selectedConten) {
-        selectedConten.classList.add('side-menu__content--active');
-        link.classList.add('side-menu__item-link--active');
+      if (selectedContent) {
+        selectedContent.classList.add("side-menu__content--active");
+        link.classList.add("side-menu__item-link--active");
       }
     });
   });

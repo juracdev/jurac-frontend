@@ -84,6 +84,10 @@ table th.fr-blue {
   border: 1px double #2196f3 !important;
 }
 
+.bg-color-main {
+  background-color: #00bfff;
+}
+
 @media (min-width: 640px) {
   .sm-hidden {
     display: block;
