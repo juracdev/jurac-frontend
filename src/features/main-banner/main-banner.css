@@ -1,10 +1,11 @@
 .main-banner__herb {
   display: none;
   width: 200px;
-  top: 0;
+  top: 50%;
   left: 50px;
   position: absolute;
   z-index: 100;
+  transform: translateY(-50%);
 }
 
 .main-banner__wrapper {
@@ -28,7 +29,6 @@
   font-weight: bold;
   text-align: center;
   background-color: #00bfff;
-  border-radius: 0 0 8px 8px;
 }
 
 .main-banner__link:hover {

@@ -5,6 +5,7 @@ import runVotes from './features/votes';
 import runFilterTables from './features/filter-tables';
 import runDpoCourses from './features/dpo-courses';
 import runSideMenu from './features/common/side-menu';
+import runSlider from './features/slider';
 
 import './styles/main.css';
 import './features/common/animations/animations.css';
@@ -34,7 +35,6 @@ import './assets/img/ep.jpg';
 import './assets/img/nv.jpg';
 import './assets/img/ov.jpg';
 import './assets/img/koni.jpg';
-import runSlider from './features/slider';
 
 // Common
 runModal();
@@ -63,8 +63,6 @@ runDpoCourses();
 
 const slider = document.getElementById('main-slider');
 
-console.log('1');
 if (slider) {
-  console.log(slider);
   runSlider(slider);
 }

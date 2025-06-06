@@ -1,6 +1,6 @@
 const hideAllElements = (elements: Element[]) => {
   elements.forEach((el) => {
-    el.classList.add("visually-hidden");
+    el.classList.add('visually-hidden');
   });
 };
 
@@ -8,14 +8,14 @@ const showElementByIdx = (elements: Element[], idx: number) => {
   const el = elements[idx];
 
   if (el) {
-    el.classList.remove("visually-hidden");
+    el.classList.remove('visually-hidden');
   }
 };
 
-const runSlider = (rootEl: Element) => {
-  const prevButton = rootEl.querySelector("#main-slider-prev");
-  const nextButton = rootEl.querySelector("#main-slider-next");
-  const slides = Array.from(rootEl.querySelectorAll(".main-slide"));
+const runSlider = (rootEl: HTMLElement) => {
+  const prevButton = rootEl.querySelector('#main-slider-prev');
+  const nextButton = rootEl.querySelector('#main-slider-next');
+  const slides = Array.from(rootEl.querySelectorAll('.main-slide'));
 
   if (!prevButton || !nextButton || !slides) {
     return;
@@ -35,17 +35,28 @@ const runSlider = (rootEl: Element) => {
     currentSlideIdx = currentSlideIdx >= maxSlideIdx ? 0 : currentSlideIdx + 1;
   };
 
-  prevButton.addEventListener("click", () => {
+  const handlePrev = () => {
     prevSlide();
     hideAllElements(slides);
     showElementByIdx(slides, currentSlideIdx);
-  });
+  };
 
-  nextButton.addEventListener("click", () => {
+  const handleNext = () => {
     nextSlide();
     hideAllElements(slides);
     showElementByIdx(slides, currentSlideIdx);
-  });
+  };
+
+  prevButton.addEventListener('click', handlePrev);
+
+  nextButton.addEventListener('click', handleNext);
+
+  const movingIntervalData = rootEl.dataset.movingInterval;
+  const movingInterval = Number(movingIntervalData);
+
+  if (!Number.isNaN(movingInterval) && movingInterval > 0) {
+    setInterval(handleNext, movingInterval);
+  }
 };
 
 export default runSlider;

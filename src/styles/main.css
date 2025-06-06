@@ -85,7 +85,17 @@ table th.fr-blue {
 }
 
 .bg-color-main {
-  background-color: #00bfff;
+  /* background-color: #00bfff; */
+  background-color: #ffaa00;
+}
+
+.hov-color-main:hover {
+  /* color: #fcab55; */
+  color: #eeeeee;
+}
+
+.hov-bg-main:hover {
+  background-color: #fcab55;
 }
 
 @media (min-width: 640px) {
