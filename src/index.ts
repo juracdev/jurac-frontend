@@ -9,6 +9,7 @@ import runSlider from './features/slider';
 
 import './styles/main.css';
 import './features/common/animations/animations.css';
+import './features/common/button-link/button-link.css';
 import './features/common/unborder-table/unborder-table.css';
 import './features/common/line-table/line-table.css';
 import './features/common/sticker/sticker.css';
