@@ -24,6 +24,7 @@ import './features/dpo-courses/dpo-courses.css';
 import './features/main-banner/main-banner.css';
 import './features/slider/slider.css';
 import './features/slider/adaptive-slider.css';
+import './features/news-card/news-card.css';
 
 import './assets/icons/at.svg';
 import './assets/icons/phone.svg';
