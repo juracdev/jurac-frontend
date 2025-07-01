@@ -20,7 +20,7 @@
   align-items: center;
   justify-content: space-between;
   flex-grow: 1;
-  padding: 6px;
+  padding: 12px;
   background-color: #717478;
 }
 
@@ -64,6 +64,7 @@
 
   .news-card {
     width: 300px;
+    align-self: stretch;
   }
 
   .news-card + .news-card {
